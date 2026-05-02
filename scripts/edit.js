@@ -30,7 +30,7 @@ async function updateSong(){
                : []
     };
 
-    const response = await fetch("http://localhost:3000/api/songs/" + songID,{
+    const response = await fetch("https://backend-song-rsiu.onrender.com/api/songs/" + songID,{
         method: "PUT",
         headers: {
             "Content-Type": "application/json"},
