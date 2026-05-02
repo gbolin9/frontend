@@ -18,7 +18,7 @@ async function addSong(event) {
     };
 
     try {
-        const response = await fetch("http://localhost:3000/api/songs", {
+        const response = await fetch("https://backend-song-rsiu.onrender.com/api/songs", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(song)
